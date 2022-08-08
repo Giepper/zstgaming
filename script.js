@@ -9,7 +9,7 @@ let isImg2 = false;
 
 gtaZst.addEventListener('click', ()=>{
     let progress = 0;
-    const gtaZstThemes = ['z1','z2','z3','z4','z5','z6','z7','z8','z9','z10','z11','z12','z13','z14','z15','z16','z17','z18','z19','z20','z21','z22','z23','z24','z25'];
+    const gtaZstThemes = ['z1','z2','z3','z4','z5','z6','z7','z8','z9','z10','z11','z12','z13','z14','z15','z16','z17','z18','z19','z20','z21','z22','z23','z24','z25','z26','z27','z28','z29','z30','z31','z32','z33','z34'];
     themeSong.loop = true;
     themeSong.play();
 
@@ -24,7 +24,7 @@ gtaZst.addEventListener('click', ()=>{
         let themeNum = chance.integer({min: 0, max: (gtaZstThemes.length)-1});
         console.log('theme1: '+themeNum);
 
-        gameLoadingImg.setAttribute('src', 'zapzdjzst/'+gtaZstThemes[themeNum]+'.jpg');
+        gameLoadingImg.setAttribute('src', 'zstImg/'+gtaZstThemes[themeNum]+'.jpg');
 
         if(gameLoadingImg.style.transform == 'scale(1.2)'){
             gameLoadingImg.style.setProperty('transform','scale(1.0)');
